@@ -7,7 +7,7 @@ web:
   volumes:
     - .:/code
 db:
-  image: "mysql:5"
+  image: "mysql:5.1"
   volumes:
     - ./mysql:/etc/mysql/conf.d
   environment:
