@@ -10,6 +10,7 @@ db:
   image: "mysql:5.1"
   volumes:
     - ./mysql:/etc/mysql/conf.d
+    - ./mysqldata:/var/lib/mysql
   environment:
     MYSQL_ROOT_PASSWORD: phpapptest
     MYSQL_DATABASE: phpapp
